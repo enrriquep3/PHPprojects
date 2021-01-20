@@ -7,21 +7,31 @@
 <body>
 
     <?php
-    //Creating a variable of my age
-$age = 24;
 
-echo "My name is Enrrique";
+// $name = "Enrrique";
+ //echo "My name is" .$name. "<br>";
+ //echo $name ." is 24 years old" . "<br>";
 
-echo "I live in America";
+//Variables names
+// start with a letter A-Z 
+$cars = array("bmw", "Audi", "mercedes");
+echo $cars[2];
+
+echo "<br>";
+$myCar = array("Audi", 2015, 75.351);
+print_r($myCar);
+
+$cars2 = array("Volve", "Chevy", "Toyota");
+
+$cars = array_merge($cars, $cars2);
+echo "<br>";
+print_r($cars);
 
 
 
 
 
-//$name = "Enrrique Pimen";
-//echo "My name is: {$name}";
   
     ?>
 </body>
 </html>
-

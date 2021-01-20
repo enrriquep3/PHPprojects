@@ -5,11 +5,22 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-    $name = "Enrrique Pimen";
 
-   echo "My name is: {$name}";
-   
+    <?php
+    //Creating a variable of my age
+$age = 24;
+
+echo "My name is Enrrique";
+
+echo "I live in America";
+
+
+
+
+
+//$name = "Enrrique Pimen";
+//echo "My name is: {$name}";
+  
     ?>
 </body>
 </html>

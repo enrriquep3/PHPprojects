@@ -9,20 +9,31 @@
 
     <?php
 
-    $num1 = 5;
-    $num2 = 5;
+
+//pass by value
+    $num1 = 10;
+    $num2 = 10;
 
     //  parameters
 
-    function calculator($num1, $num2) {
-        echo $num1 * $num2;
-    }
+ function add($num1, $num2){
+     return $num1 + $num2;
+ }
       
     //arguments 
-    calculator($num1, $num2);
+    echo "The number is: " . add($num1, $num2);
 
+ 
 
+    // pass by reference 
 
+    $x = 10;
+
+    function addByValue($x) {
+        $x += 5;
+    }
+
+    function addByReference(&$x)
 
     ?>
 </body>

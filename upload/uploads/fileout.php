@@ -6,9 +6,23 @@
 </head>
 <body>
  <?php
- $myFile = fopen("../uploads/file.txt", "w");
 
- echo $myFile;
+
+if (isset($_POST['submit'])){
+    $myFile = fopen("../uploads/file.txt", "a");
+
+    $txt = "My age is " . $_POST['age'] . "\n";
+
+    
+ fwrite($myFile, $txt);
+ fclose($myFile);
+
+}
+
  ?>   
+ <form action="fileout.php" method="post">
+ <input type="text" name="age">
+ <input type="submit" name="submit">
+ </form>
 </body>
 </html>
